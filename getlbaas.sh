@@ -8,6 +8,9 @@
 # Usage
 # ./getlbaas.sh <Load Balancer OCID>
 #
+
+command -v oci >/dev/null 2>&1 || { echo >&2 "OCI CLI is not installed."; exit 1; }
+
 if [ "$#" == "1" ]; then
     oci lb load-balancer get --load-balancer-id $1
     if [ $? -eq 0 ]; then
