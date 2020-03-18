@@ -1,4 +1,4 @@
-##LBaaS Configuration Capture
+# LBaaS Configuration Capture
 
 **Requirements**
 - Bash shell
